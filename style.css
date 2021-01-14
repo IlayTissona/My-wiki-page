@@ -95,3 +95,6 @@ img {
 	width: var(--vidw);
 	height: var(--vidh);
 }
+.form {
+	text-align: center;
+}

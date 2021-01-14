@@ -9,7 +9,7 @@
 	<body>
 		<nav class="nav-bar">
 			<div class="nav-link" id="current-page">
-				<a href="./index.html">Main</a>
+				<a href="./mainstream.html">MainStream</a>
 			</div>
 			<div class="nav-link">
 				<a href="./goa.html">Goa-trance</a>
@@ -186,6 +186,51 @@
 						allowfullscreen
 					></iframe>
 				</div>
+			</section>
+			<section class="newsletter" id="news-form">
+				<div class="section-title">
+					<h6>Want to hear some more?</h6>
+				</div>
+				<form class="form" action="#">
+					<div class="input-name">
+						<label for="name"> Full name: </label><br />
+						<input id="name" type="text" placeholder="Psy Trancesky" required />
+					</div>
+					<div class="input-mail">
+						<label for="email"> Email: </label><br />
+						<input
+							id="email"
+							type="email"
+							placeholder="Psy@Trance.com"
+							required
+						/>
+					</div>
+					<div class="input-radio">
+						<input
+							id="eventonly"
+							type="radio"
+							name="notifications"
+							value="eventonly"
+						/>
+						<label for="eventonly">
+							I want to be noticed only on upcoming events </label
+						><br />
+						<input
+							id="allnotifications"
+							type="radio"
+							name="notifications"
+							value="allnotifications"
+							checked
+						/>
+						<label for="allnotifications">
+							I want to be updated on everything
+						</label>
+					</div>
+					<div class="input-submit">
+						<label for="submit"></label>
+						<input id="submit" type="submit" value="Sign me up!" />
+					</div>
+				</form>
 			</section>
 		</main>
 	</body>
