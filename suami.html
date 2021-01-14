@@ -8,8 +8,11 @@
 	</head>
 	<body>
 		<nav class="nav-bar">
-			<div class="nav-link">
-				<a href="./index.html">Main</a>
+			<div class="nav-link" id="current-page">
+				<a href="./index.html">Home</a>
+			</div>
+			<div class="nav-link" id="current-page">
+				<a href="./mainstream.html">MainStream</a>
 			</div>
 			<div class="nav-link">
 				<a href="./goa.html">Goa-trance</a>
@@ -20,7 +23,7 @@
 			<div class="nav-link">
 				<a href="./dark.html">Dark</a>
 			</div>
-			<div class="nav-link" id="current-page">
+			<div class="nav-link">
 				<a href="./suami.html">Suami</a>
 			</div>
 			<div class="nav-link">
@@ -56,11 +59,182 @@
 				<a href="#news-form">Newsletter</a>
 			</div>
 		</nav>
-		<header class="page-header">
-			<h1 class="page-title">Soundi-Suami</h1>
+		<header class="page-header" id="page-title">
+			<h1 class="page-title" id="main-page-title">Psytrance Music</h1>
 			<h4 class="page-minititle">
-				Psytrance that refuses to take itself seriuosly
+				A quick guide for those who never heard psytrance before
 			</h4>
 		</header>
+		<main>
+			<section class="description" id="description">
+				<div class="section-title">
+					<h6>What is psytrance?</h6>
+				</div>
+				<div class="section-content">
+					<p>
+						Psychedelic trance, psytrance or psy is a subgenre of trance music
+						characterized by arrangements of rhythms and layered melodies
+						created by high tempo riffs. It is comparable to the hardcore,
+						underground style of trance music.
+					</p>
+				</div>
+			</section>
+			<section class="charachters" id="charachters">
+				<div class="section-title">
+					<h6>Main charachters of psytrance music</h6>
+				</div>
+				<div class="section-content">
+					<ul class="char-list">
+						<li>
+							Psychedelic trance has a distinctive, energetic sound that tends
+							to be faster than other forms of trance or techno music
+						</li>
+						<li>
+							Psytrance tempo is generally ranging from 135 to 150 BPM but some
+							psytrance songs can also reach 190BPM, 200bpm, 210bpm and even
+							300bpm.
+						</li>
+						<li>
+							Psytrance uses a very distinctive bass beat that pounds constantly
+							throughout the song and overlays the bass with varying rhythms
+							drawn from funk, techno, dance, acid house, eurodance and trance
+							using drums and other instruments.
+						</li>
+						<li>
+							Psychedelic trance tracks tend to be six to ten minutes long.
+						</li>
+					</ul>
+				</div>
+			</section>
+			<br />
+			<div class="artists" id="artists">
+				<div class="section-title">
+					<h6>Famous Psytrance Artists</h6>
+					<br />
+				</div>
+				<br />
+				<div class="section-content-artists">
+					<div class="artist-box">
+						<div>
+							<img
+								src="./artists/astrix.jfif"
+								class="artist-img"
+								alt="artist picture"
+							/>
+						</div>
+						<div>
+							<p>
+								Astrix A.K.A Avi Shmailov, is an israeli psytrance producer. you
+								can hear some of his music
+								<a target="_blank" href="https://soundcloud.com/astrix-official"
+									>here</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="artist-box">
+						<div>
+							<img
+								src="./artists/infectedmushroom.jfif"
+								class="artist-img"
+								alt="artist picture"
+							/>
+						</div>
+						<div>
+							<p>
+								Innfected Mushroom is an israeli psytrance duo. you can hear
+								some of their music
+								<a
+									target="_blank"
+									href="https://www.youtube.com/playlist?playnext=1&list=PLbe_bMvCl-u1tXy6A-Skb8RzPUzh-xYh-&feature=gws_kp_artist"
+									>here</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="artist-box">
+						<div>
+							<img
+								src="./artists/vinivici.jfif"
+								class="artist-img"
+								alt="artist picture"
+							/>
+						</div>
+						<div>
+							<p>
+								Vini Vici is an israeli psytrance duo. you can hear some of
+								their music
+								<a
+									target="_blank"
+									href="https://www.youtube.com/playlist?playnext=1&list=PL9Gk5ECSse5qqTyeKUT7i1lNBu_NdXmks&feature=gws_kp_artist"
+									>here</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<section class="video" id="video">
+				<div class="section-title">
+					<h6>So how's the dancefloor look like?</h6>
+				</div>
+				<div class="video-div">
+					<iframe
+						width="100%"
+						height="100%"
+						src="https://www.youtube.com/embed/unYe45Bvl14"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+			<section class="newsletter" id="news-form">
+				<div class="section-title">
+					<h6>Want to hear some more?</h6>
+				</div>
+				<form class="form" action="#">
+					<div class="input-name">
+						<label for="name"> Full name: </label><br />
+						<input id="name" type="text" placeholder="Psy Trancesky" required />
+					</div>
+					<div class="input-mail">
+						<label for="email"> Email: </label><br />
+						<input
+							id="email"
+							type="email"
+							placeholder="Psy@Trance.com"
+							required
+						/>
+					</div>
+					<div class="input-radio">
+						<input
+							id="eventonly"
+							type="radio"
+							name="notifications"
+							value="eventonly"
+						/>
+						<label for="eventonly">
+							I want to be noticed only on upcoming events </label
+						><br />
+						<input
+							id="allnotifications"
+							type="radio"
+							name="notifications"
+							value="allnotifications"
+							checked
+						/>
+						<label for="allnotifications">
+							I want to be updated on everything
+						</label>
+					</div>
+					<div class="input-submit">
+						<label for="submit"></label>
+						<input id="submit" type="submit" value="Sign me up!" />
+					</div>
+				</form>
+			</section>
+		</main>
 	</body>
 </html>
