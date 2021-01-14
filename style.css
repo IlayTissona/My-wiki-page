@@ -19,11 +19,32 @@
 	right: 20vw;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 body {
 	background: linear-gradient(35deg, red, gold, green);
 }
+h1 {
+	font-size: 60px;
+	line-height: 60px;
+}
+h4 {
+	font-size: 26px;
+	line-height: 26px;
+}
+h6 {
+	font-size: 32px;
+	line-height: 32px;
+}
 p {
 	margin: 0;
+	font-size: 20px;
+	line-height: 10vh;
+}
+ul {
+	line-height: 10vh;
+}
+form {
+	line-height: 7vh;
 }
 img {
 	margin: 0;
@@ -46,6 +67,7 @@ img {
 	margin: 3px, 3px, 3px, 3px;
 	border: 2px solid whitesmoke;
 	text-align: center;
+	line-height: 10vh;
 }
 .nav-bar div :hover {
 	transform: scale(1.05);
@@ -56,9 +78,9 @@ img {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 0vh;
+	top: 10vh;
 	right: 0;
-	height: 100vh;
+	height: 90vh;
 	width: 10vw;
 	justify-content: flex-end;
 	text-align: center;
@@ -67,10 +89,11 @@ img {
 }
 .nav-side div {
 	border: 3px solid whitesmoke;
-	height: 14%;
+	flex: 1;
+	padding: 3vh 0vh 3vh 0vh;
 }
 .nav-side div :hover {
-	transform: scale(1.05);
+	transform: scale(1.3);
 	background-color: black;
 	color: whitesmoke;
 }
@@ -82,9 +105,17 @@ img {
 	margin-top: 10vh;
 	text-align: center;
 }
+.page-title {
+	height: 80px;
+}
+.page-minititle {
+	height: 50px;
+}
 
 .section-title {
 	text-align: center;
+	height: 30px;
+	margin-top: 10px;
 }
 
 .section-content {
@@ -118,6 +149,7 @@ img {
 .artist-box p {
 	height: 35vh;
 	width: 100%;
+	line-height: normal;
 }
 .video-div {
 	width: var(--vidw);
@@ -131,16 +163,18 @@ img {
 	text-align: center;
 	line-height: 90vh;
 	animation-name: psycho;
-	animation-duration: 500ms;
+	animation-duration: 300ms;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 #anim {
 	height: 100vh;
 	width: 100vw;
 	z-index: 0;
 	animation-name: back;
-	animation-duration: 3s;
+	animation-duration: 1s;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 @keyframes psycho {
@@ -193,6 +227,7 @@ img {
 #contact {
 	display: flex;
 	bottom: 0;
+	width: 90vw;
 }
 
 .contact-link {
