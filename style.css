@@ -176,6 +176,9 @@ img {
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
+#audio {
+	width: 88.7vw;
+}
 
 @keyframes psycho {
 	0% {
