@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+	:root {
+		--vidw: 90vw;
+		--vidh: 50vh;
+		--direction: column;
+	}
+}
+
+@media (min-width: 768px) {
+	:root {
+		--vidw: 90vw;
+		--vidh: 90vh;
+		--direction: row;
+	}
+}
+
 * {
 	margin: 0;
 	right: 20vw;
@@ -50,7 +66,7 @@ img {
 
 .section-content-artists {
 	display: flex;
-	flex-direction: row;
+	flex-direction: var(--direction);
 	justify-content: left;
 	width: 90vw;
 }
@@ -74,4 +90,8 @@ img {
 .artist-box p {
 	height: 35vh;
 	width: 100%;
+}
+.video-div {
+	width: var(--vidw);
+	height: var(--vidh);
 }
