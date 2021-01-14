@@ -181,7 +181,43 @@ img {
 	0% {
 		color: white;
 	}
+	3% {
+		color: red;
+	}
+	6% {
+		color: white;
+	}
+	18% {
+		color: gold;
+	}
+	21% {
+		color: white;
+	}
+	33% {
+		color: green;
+	}
+	36% {
+		color: white;
+	}
 	50% {
+		color: black;
+	}
+	53% {
+		color: red;
+	}
+	56% {
+		color: black;
+	}
+	68% {
+		color: gold;
+	}
+	71% {
+		color: black;
+	}
+	83% {
+		color: green;
+	}
+	86% {
 		color: black;
 	}
 	100% {
