@@ -19,6 +19,9 @@
 	right: 20vw;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+body {
+	background: linear-gradient(35deg, red, gold, green);
+}
 p {
 	margin: 0;
 }
@@ -31,24 +34,49 @@ img {
 	position: fixed;
 	top: 0;
 	right: 10vw;
-	left: 10vw;
+	left: 0vw;
 	height: 10vh;
-	width: 90vw;
+	width: 100vw;
 	justify-content: space-around;
+	background: linear-gradient(325deg, black, white);
+	z-index: 2;
 }
 .nav-bar div {
 	flex: 1;
+	margin: 3px, 3px, 3px, 3px;
+	border: 2px solid whitesmoke;
+	text-align: center;
+}
+.nav-bar div :hover {
+	transform: scale(1.05);
+	background-color: black;
+	color: whitesmoke;
 }
 .nav-side {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 10vh;
+	top: 0vh;
 	right: 0;
-	height: 90vh;
+	height: 100vh;
 	width: 10vw;
-	justify-content: space-around;
+	justify-content: flex-end;
 	text-align: center;
+	background: linear-gradient(235deg, black, white);
+	z-index: 1;
+}
+.nav-side div {
+	border: 3px solid whitesmoke;
+	height: 14%;
+}
+.nav-side div :hover {
+	transform: scale(1.05);
+	background-color: black;
+	color: whitesmoke;
+}
+#current-page {
+	background-color: rgb(173, 238, 89);
+	color: rgb(255, 81, 81);
 }
 .page-header {
 	margin-top: 10vh;
@@ -99,8 +127,70 @@ img {
 	text-align: center;
 }
 
+#anim-text {
+	text-align: center;
+	line-height: 90vh;
+	animation-name: psycho;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+}
+#anim {
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
+	animation-name: back;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes psycho {
+	0% {
+		color: white;
+	}
+	50% {
+		color: black;
+	}
+	100% {
+		color: white;
+	}
+}
+
+@keyframes back {
+	0% {
+		background: linear-gradient(0deg, red, gold, green);
+	}
+	10% {
+		background: linear-gradient(36deg, red, gold, green);
+	}
+	20% {
+		background: linear-gradient(72deg, red, gold, green);
+	}
+	30% {
+		background: linear-gradient(108deg, red, gold, green);
+	}
+	40% {
+		background: linear-gradient(144deg, red, gold, green);
+	}
+	50% {
+		background: linear-gradient(180deg, red, gold, green);
+	}
+	60% {
+		background: linear-gradient(216deg, red, gold, green);
+	}
+	70% {
+		background: linear-gradient(252deg, red, gold, green);
+	}
+	80% {
+		background: linear-gradient(288deg, red, gold, green);
+	}
+	90% {
+		background: linear-gradient(324deg, red, gold, green);
+	}
+	100% {
+		background: linear-gradient(360deg, red, gold, green);
+	}
+}
 #contact {
-	position: fixed;
 	display: flex;
 	bottom: 0;
 }
