@@ -3,6 +3,12 @@
 	right: 20vw;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+p {
+	margin: 0;
+}
+img {
+	margin: 0;
+}
 .nav-bar {
 	display: flex;
 	flex-direction: row;
@@ -40,4 +46,32 @@
 .section-content {
 	text-align: left;
 	margin-right: 10vw;
+}
+
+.section-content-artists {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	width: 90vw;
+}
+.artist-box {
+	flex: 30%;
+	height: 35vh;
+	padding: 1px;
+	display: flex;
+	flex-direction: row;
+}
+.artist-box div {
+	flex: 50%;
+	padding: 2px;
+	border: 2px solid black;
+}
+
+.artist-box img {
+	height: 35vh;
+	width: 100%;
+}
+.artist-box p {
+	height: 35vh;
+	width: 100%;
 }
