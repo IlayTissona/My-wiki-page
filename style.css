@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	top: 0;
+	height: 10vh;
+	width: 100vw;
+	justify-content: space-around;
+}
+.nav-bar div {
+	flex: 1;
+}
+
+.page-header {
+	margin-top: 10vh;
+}
