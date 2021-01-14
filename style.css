@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	right: 20vw;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 .nav-bar {
 	display: flex;
